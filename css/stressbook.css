@@ -1,0 +1,59 @@
+.border {
+  width: 250px;
+  height: 350px;
+  border: 2px solid black;
+}
+
+img {
+  width: 250px;
+  height: 350px;
+}
+
+.flexing {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card-container:hover .card100 {
+  transform: rotateY(180deg);
+}
+
+.card100 {
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.card100 {
+  width: 250px;
+  height: 350px;
+  margin: 10px;
+}
+
+.front,
+.back {
+  box-shadow: 0 1px 6px 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+.button100 {
+  position: absolute;
+  left: 80px;
+  bottom: 10px;
+}
+
+.search100 {
+  width: 1000px;
+}
